@@ -1,0 +1,4 @@
+#caracter de comentario
+#print para imprimir informaçoes na tela
+print('Olá Mundo pyton')
+print('meu nome é: ', 'Gustavo'  , 17, 'anos')
