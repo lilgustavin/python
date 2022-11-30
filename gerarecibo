@@ -1,0 +1,9 @@
+from recibo import Recibo
+from os import system
+system('cls')
+
+novoRecibo = Recibo('gustavo')
+novoRecibo.valor = 1258.20
+novoRecibo.descricao('desenvolvimento de sistemas em python')
+
+print(novoRecibo)

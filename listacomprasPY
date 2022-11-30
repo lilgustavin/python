@@ -1,0 +1,22 @@
+from os import system
+system('cls')
+titulo = 'CALCULAR LISTA DE COMPRAS'
+print(titulo.center(60, '#'))
+
+produtosDesc = []
+produtosPreço = []
+numeroItens = int(input('informe numero de itens deseja'))
+for i in range(0,numeroItens):
+    nomeProduto = input(f'nome do produto{i}: ')
+    preçoProduto = float(input(f'preço do {nomeProduto}'))
+    produtosDesc.append(nomeProduto)
+    produtosPreço.append(preçoProduto)
+
+total = 0
+for i in range(0,numeroItens):
+    print(f'{produtosDesc[i]} - R$ {produtosPreço[i]}')
+    total += produtosPreço[i]
+print(f'total: R$ {total}')
+
+print(produtosDesc)
+print(produtosPreço)
